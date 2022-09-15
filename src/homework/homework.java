@@ -54,7 +54,23 @@ public class homework {
 			System.out.println("Sayı 20' den büyüktür.");
 		}
 
-
+		//ReCap Demo 1 En büyük sayı hangisi
+		int sayi4=29;
+		int sayi5=22;
+		int sayi6=26;
+		int enBuyukSayi=sayi4;
+		
+		if(enBuyukSayi<sayi5) {
+			enBuyukSayi=sayi5;
+		}
+		
+		if(enBuyukSayi<sayi6) {
+			enBuyukSayi=sayi6;
+		}
+		
+		System.out.println("En büyük sayi= "+enBuyukSayi);
+		
+		
 
 	}
 
