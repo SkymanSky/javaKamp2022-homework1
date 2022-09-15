@@ -24,7 +24,37 @@ public class homework {
 		
 		boolean dogruMu=false;
 		
-				
+		//conditionals
+		int sayi3=24;
+		if(sayi3<20) {
+			System.out.println("Sayı 20 den küçüktür.");
+		}
+		
+		if(sayi3<15) {
+			System.out.println("Sayı 20 den küçüktür.");
+		}
+		
+		if(sayi3<20) {
+			System.out.println("Sayı 20 den küçüktür.");
+		}else {
+			System.out.println("Sayı 20 den küçük değildir.");
+		}
+		
+		if(sayi3<20) {
+			System.out.println("Sayı 20 den küçüktür.");
+		}else if(sayi3==20) {
+			System.out.println("Sayı 20 ye eşittir.");
+		}
+		
+		if(sayi3<20) {
+			System.out.println("Sayı 20 den küçüktür.");
+		}else if(sayi3==20) {
+			System.out.println("Sayı 20 ye eşittir.");
+		}else {
+			System.out.println("Sayı 20' den büyüktür.");
+		}
+
+
 
 	}
 
