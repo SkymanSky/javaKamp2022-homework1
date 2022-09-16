@@ -177,6 +177,30 @@ public class homework {
 		}
 		System.out.println(total);
 		System.out.println("En büyük sayı: " + max);
+		
+		//Çok Boyutlu Dizilerle Çalışmak
+		String[][] sehirler = new String[3][3];
+		
+		sehirler[0][0]="İstanbul";
+		sehirler[0][1]="Bursa";
+		sehirler[0][2]="Bileckik";
+		sehirler[1][0]="Ankara";
+		sehirler[1][1]="Konya";
+		sehirler[1][2]="Kayseri";
+		sehirler[2][0]="Diyarbakır";
+		sehirler[2][1]="Şanlıurfa";
+		sehirler[2][2]="Gaziantep";
+		
+		for(int y=0;y<3;y++) {
+			for(int z=0;z<3;z++) {
+				System.out.println(sehirler[y][z]);
+			}
+			System.out.println("-------------");
+		}
+		
+		
+		
+		
 
 	}
 
