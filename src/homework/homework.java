@@ -1,5 +1,7 @@
 package homework;
 
+import java.util.Iterator;
+
 public class homework {
 
 	public static void main(String[] args) {
@@ -71,7 +73,7 @@ public class homework {
 		System.out.println("En büyük sayi= " + enBuyukSayi);
 
 		// Switch bloklarıyla çalışmak.
-		char grade = 'F';
+		char grade = 'G';
 
 		switch (grade) {
 		case 'A':
@@ -92,6 +94,18 @@ public class homework {
 		default:
 			System.out.println("Geçersiz not girdiniz.");
 		}
+		
+		//döngüler
+		//for 
+		for(int i=0;i<=10;i++) {
+			System.out.println(i);
+		}
+		System.out.println("Döngü bitti.");
+		
+		for (int i = 0; i < 10; i+=2) {
+			System.out.println(i);
+		}
+		System.out.println("Döngü bitti.");
 
 	}
 
