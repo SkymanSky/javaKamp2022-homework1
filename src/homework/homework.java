@@ -106,6 +106,21 @@ public class homework {
 			System.out.println(i);
 		}
 		System.out.println("Döngü bitti.");
+		
+		//while döngüsü
+		int i=1;
+		while (i<10) {
+			System.out.println(i);
+			i++;
+		}
+		System.out.println("while döngüsü bitti.");
+		
+		int j=1;
+		while (j<10) {
+			System.out.println(j);
+			j+=2;
+		}
+		System.out.println("while döngüsü bitti.");
 
 	}
 
