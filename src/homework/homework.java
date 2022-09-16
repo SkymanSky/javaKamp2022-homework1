@@ -1,6 +1,6 @@
 package homework;
 
-import java.util.Iterator;
+
 
 public class homework {
 
@@ -76,91 +76,107 @@ public class homework {
 		char grade = 'G';
 
 		switch (grade) {
-		case 'A':
-			System.out.println("Mükemmel: Geçtiniz");
-			break;
-		case 'B':
-			System.out.println("Çok güzel: Geçtiniz");
-			break;
-		case 'C':
-			System.out.println("İyi: Geçtiniz");
-			break;
-		case 'D':
-			System.out.println("Fena Değl: Geçtiniz");
-			break;
-		case 'F':
-			System.out.println("Maalesef Kaldınız.");
-			break;
-		default:
-			System.out.println("Geçersiz not girdiniz.");
+			case 'A':
+				System.out.println("Mükemmel: Geçtiniz");
+				break;
+			case 'B':
+				System.out.println("Çok güzel: Geçtiniz");
+				break;
+			case 'C':
+				System.out.println("İyi: Geçtiniz");
+				break;
+			case 'D':
+				System.out.println("Fena Değl: Geçtiniz");
+				break;
+			case 'F':
+				System.out.println("Maalesef Kaldınız.");
+				break;
+			default:
+				System.out.println("Geçersiz not girdiniz.");
 		}
-		
-		//döngüler
-		//for 
-		for(int i=0;i<=10;i++) {
+
+		// döngüler
+		// for
+		for (int i = 0; i <= 10; i++) {
 			System.out.println(i);
 		}
 		System.out.println("Döngü bitti.");
-		
-		for (int i = 0; i < 10; i+=2) {
+
+		for (int i = 0; i < 10; i += 2) {
 			System.out.println(i);
 		}
 		System.out.println("Döngü bitti.");
-		
-		//while döngüsü
-		int i=1;
-		while (i<10) {
+
+		// while döngüsü
+		int i = 1;
+		while (i < 10) {
 			System.out.println(i);
 			i++;
 		}
 		System.out.println("while döngüsü bitti.");
-		
-		int j=1;
-		while (j<10) {
+
+		int j = 1;
+		while (j < 10) {
 			System.out.println(j);
-			j+=2;
+			j += 2;
 		}
 		System.out.println("while döngüsü bitti.");
-		
-		//Do while döngüsü
-		int k=100;
+
+		// Do while döngüsü
+		int k = 100;
 		do {
 			System.out.println(k);
-			k+=2;
-		} while (k<10);
-		
+			k += 2;
+		} while (k < 10);
+
 		System.out.println("Do while döngüsü bitti.");
-		
-		//diziler
-		String ogrenci1="Engin";
-		String ogrenci2="Derin";
-		String ogrenci3="Salih";
-		String ogrenci4="Ahmet";
-		
+
+		// diziler
+		String ogrenci1 = "Engin";
+		String ogrenci2 = "Derin";
+		String ogrenci3 = "Salih";
+		String ogrenci4 = "Ahmet";
+
 		System.out.println(ogrenci1);
 		System.out.println(ogrenci2);
 		System.out.println(ogrenci3);
 		System.out.println(ogrenci4);
-		
+
 		System.out.println("-----------------------------");
-		
+
 		String[] ogrenciler = new String[4];
-		ogrenciler[0]="Engin";
-		ogrenciler[1]="Derin";
-		ogrenciler[2]="Salih";
-		ogrenciler[3]="Ahmet";
-		//ogrenciler[4]="Ali";
-		
-		
-		for(int x=0;x<ogrenciler.length;x++) {
-			System.out.println(ogrenciler[x]);	
+		ogrenciler[0] = "Engin";
+		ogrenciler[1] = "Derin";
+		ogrenciler[2] = "Salih";
+		ogrenciler[3] = "Ahmet";
+		// ogrenciler[4]="Ali";
+
+		for (int x = 0; x < ogrenciler.length; x++) {
+			System.out.println(ogrenciler[x]);
 		}
-		
+
 		System.out.println("---------------------");
-		
-		for(String ogrenci:ogrenciler) {
+
+		for (String ogrenci : ogrenciler) {
 			System.out.println(ogrenci);
 		}
+
+		// ReCap Demo 2 - Dizilerle çalışmak
+
+		double[] myList = { 1.2, 1.3, 4.3, 6.4 };
+		double total = 0;
+		double max = 0;
+
+		for (double number : myList) {
+			if (max < number) {
+				max = number;
+			}
+			total += number;
+			System.out.println(number);
+
+		}
+		System.out.println(total);
+		System.out.println("En büyük sayı: " + max);
 
 	}
 
