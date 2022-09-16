@@ -121,6 +121,15 @@ public class homework {
 			j+=2;
 		}
 		System.out.println("while döngüsü bitti.");
+		
+		//Do while döngüsü
+		int k=100;
+		do {
+			System.out.println(k);
+			k+=2;
+		} while (k<10);
+		
+		System.out.println("Do while döngüsü bitti.");
 
 	}
 
