@@ -212,6 +212,22 @@ public class homework {
 		System.out.println(mesaj1.indexOf("av"));
 		System.out.println(mesaj1.lastIndexOf("a"));	
 		
+		//Stringlerle çalışmak2
+		String yeniMesaj=mesaj1.replace(" ", "-");
+		System.out.println(yeniMesaj);
+		System.out.println(mesaj1.substring(2));
+		System.out.println(mesaj1.substring(2, 5));
+		for(String kelime:mesaj1.split(" ")) {
+			System.out.println(kelime);
+		}
+		System.out.println(mesaj1.toLowerCase());
+		System.out.println(mesaj1.toUpperCase());
+		
+		String mesaj2="      Bugün hava çok güzel.     ";
+		System.out.println(mesaj2);
+		System.out.println(mesaj2.trim());
+		
+		
 		
 		
 
