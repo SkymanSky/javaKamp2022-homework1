@@ -198,6 +198,19 @@ public class homework {
 			System.out.println("-------------");
 		}
 		
+		//Stringlerle çalışmak1
+		String mesaj1="Bugün hava çok güzel.";
+		System.out.println(mesaj1);
+		System.out.println("Eleman sayısı: "+mesaj1.length());
+		System.out.println("5. eleman: "+mesaj1.charAt(4));
+		System.out.println(mesaj1.concat(" Yaşasın.!"));
+		System.out.println(mesaj1.startsWith("b"));
+		System.out.println(mesaj1.endsWith("."));
+		char[] karakterler= new char[5];
+		mesaj1.getChars(0, 5, karakterler, 0);
+		System.out.println(karakterler);
+		System.out.println(mesaj1.indexOf("av"));
+		System.out.println(mesaj1.lastIndexOf("a"));	
 		
 		
 		
