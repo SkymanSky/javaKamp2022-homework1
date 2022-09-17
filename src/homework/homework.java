@@ -227,9 +227,33 @@ public class homework {
 		System.out.println(mesaj2);
 		System.out.println(mesaj2.trim());
 		
+		//Mini Proje 1 - Sayı Asal mı?
+		int number=1;
+		int remainder=number%2;
+		//System.out.println(remainder);
+		boolean isPrime=true;
 		
+		if(number==1) {
+			System.out.println("Sayı asal değildir.");
+			return;
+		}
 		
+		if(number<=1) {
+			System.out.println("Geçersiz sayı girdiniz.");
+		}
 		
+		for (int l = 0; l < number; l++) {
+			if(number%2==0) {
+				isPrime=false;
+			}
+			
+		}
+		
+		if(isPrime==false) {
+			System.out.println("Sayı asaldır.");
+		}else {
+			System.out.println("Sayı asal değildir.");
+		}
 
 	}
 
