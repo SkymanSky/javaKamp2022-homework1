@@ -254,6 +254,22 @@ public class homework {
 		}else {
 			System.out.println("Sayı asal değildir.");
 		}
+		
+		//Mini Proje 2 - Kalın Sesli ve İnce Sesli Harfler
+		char harf='I';
+		
+		switch (harf) {
+		case 'A':
+		case 'I':
+		case 'O':
+		case 'U':
+			System.out.println("Kalın Sesli harf.");
+			break;
+		default:
+			System.out.println("İnce sesli harf.");
+		
+		}
+		
 
 	}
 
