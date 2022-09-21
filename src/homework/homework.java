@@ -290,7 +290,7 @@ public class homework {
 		
 
 		//Mini Proje 4 - Arkadaş Sayılar
-		int sayi1=222;
+/*		int sayi1=222;
 		int sayi2=284;
 		int toplam1=0;
 		int toplam2=0;
@@ -314,7 +314,25 @@ public class homework {
 		}else {
 			System.out.println("Bu iki sayı arkadaş değildir.");
 		}
+*/
 		
+		//Mini Proje 5 - Sayı Bulma
+		int[] sayilar = new int[] {1,2,5,7,9,0};
+		int aranacak=5;
+		boolean varMi=false;
+		
+		for (int sayi:sayilar) {
+			if(sayi==aranacak) {
+				varMi=true;
+				break;
+			}
+		}
+		
+		if (varMi) {
+			System.out.println("Sayi mevcuttur.");
+		}else {
+			System.out.println("Sayı mevcut değildir.");
+		}
 		
 		
 		
