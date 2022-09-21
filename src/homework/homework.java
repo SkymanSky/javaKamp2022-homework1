@@ -1,11 +1,9 @@
 package homework;
 
-
-
 public class homework {
 
 	public static void main(String[] args) {
-		System.out.println("Merhaba Dünya.");
+/*		System.out.println("Merhaba Dünya.");
 
 		// Variables
 		int ogranciSayisi = 12;
@@ -76,23 +74,23 @@ public class homework {
 		char grade = 'G';
 
 		switch (grade) {
-			case 'A':
-				System.out.println("Mükemmel: Geçtiniz");
-				break;
-			case 'B':
-				System.out.println("Çok güzel: Geçtiniz");
-				break;
-			case 'C':
-				System.out.println("İyi: Geçtiniz");
-				break;
-			case 'D':
-				System.out.println("Fena Değl: Geçtiniz");
-				break;
-			case 'F':
-				System.out.println("Maalesef Kaldınız.");
-				break;
-			default:
-				System.out.println("Geçersiz not girdiniz.");
+		case 'A':
+			System.out.println("Mükemmel: Geçtiniz");
+			break;
+		case 'B':
+			System.out.println("Çok güzel: Geçtiniz");
+			break;
+		case 'C':
+			System.out.println("İyi: Geçtiniz");
+			break;
+		case 'D':
+			System.out.println("Fena Değl: Geçtiniz");
+			break;
+		case 'F':
+			System.out.println("Maalesef Kaldınız.");
+			break;
+		default:
+			System.out.println("Geçersiz not girdiniz.");
 		}
 
 		// döngüler
@@ -177,87 +175,87 @@ public class homework {
 		}
 		System.out.println(total);
 		System.out.println("En büyük sayı: " + max);
-		
-		//Çok Boyutlu Dizilerle Çalışmak
+
+		// Çok Boyutlu Dizilerle Çalışmak
 		String[][] sehirler = new String[3][3];
-		
-		sehirler[0][0]="İstanbul";
-		sehirler[0][1]="Bursa";
-		sehirler[0][2]="Bileckik";
-		sehirler[1][0]="Ankara";
-		sehirler[1][1]="Konya";
-		sehirler[1][2]="Kayseri";
-		sehirler[2][0]="Diyarbakır";
-		sehirler[2][1]="Şanlıurfa";
-		sehirler[2][2]="Gaziantep";
-		
-		for(int y=0;y<3;y++) {
-			for(int z=0;z<3;z++) {
+
+		sehirler[0][0] = "İstanbul";
+		sehirler[0][1] = "Bursa";
+		sehirler[0][2] = "Bileckik";
+		sehirler[1][0] = "Ankara";
+		sehirler[1][1] = "Konya";
+		sehirler[1][2] = "Kayseri";
+		sehirler[2][0] = "Diyarbakır";
+		sehirler[2][1] = "Şanlıurfa";
+		sehirler[2][2] = "Gaziantep";
+
+		for (int y = 0; y < 3; y++) {
+			for (int z = 0; z < 3; z++) {
 				System.out.println(sehirler[y][z]);
 			}
 			System.out.println("-------------");
 		}
-		
-		//Stringlerle çalışmak1
-		String mesaj1="Bugün hava çok güzel.";
+
+		// Stringlerle çalışmak1
+		String mesaj1 = "Bugün hava çok güzel.";
 		System.out.println(mesaj1);
-		System.out.println("Eleman sayısı: "+mesaj1.length());
-		System.out.println("5. eleman: "+mesaj1.charAt(4));
+		System.out.println("Eleman sayısı: " + mesaj1.length());
+		System.out.println("5. eleman: " + mesaj1.charAt(4));
 		System.out.println(mesaj1.concat(" Yaşasın.!"));
 		System.out.println(mesaj1.startsWith("b"));
 		System.out.println(mesaj1.endsWith("."));
-		char[] karakterler= new char[5];
+		char[] karakterler = new char[5];
 		mesaj1.getChars(0, 5, karakterler, 0);
 		System.out.println(karakterler);
 		System.out.println(mesaj1.indexOf("av"));
-		System.out.println(mesaj1.lastIndexOf("a"));	
-		
-		//Stringlerle çalışmak2
-		String yeniMesaj=mesaj1.replace(" ", "-");
+		System.out.println(mesaj1.lastIndexOf("a"));
+
+		// Stringlerle çalışmak2
+		String yeniMesaj = mesaj1.replace(" ", "-");
 		System.out.println(yeniMesaj);
 		System.out.println(mesaj1.substring(2));
 		System.out.println(mesaj1.substring(2, 5));
-		for(String kelime:mesaj1.split(" ")) {
+		for (String kelime : mesaj1.split(" ")) {
 			System.out.println(kelime);
 		}
 		System.out.println(mesaj1.toLowerCase());
 		System.out.println(mesaj1.toUpperCase());
-		
-		String mesaj2="      Bugün hava çok güzel.     ";
+
+		String mesaj2 = "      Bugün hava çok güzel.     ";
 		System.out.println(mesaj2);
 		System.out.println(mesaj2.trim());
-		
-		//Mini Proje 1 - Sayı Asal mı?
-		int number=1;
-		int remainder=number%2;
-		//System.out.println(remainder);
-		boolean isPrime=true;
-		
-		if(number==1) {
+
+		// Mini Proje 1 - Sayı Asal mı?
+		int number = 1;
+		int remainder = number % 2;
+		// System.out.println(remainder);
+		boolean isPrime = true;
+
+		if (number == 1) {
 			System.out.println("Sayı asal değildir.");
 			return;
 		}
-		
-		if(number<=1) {
+
+		if (number <= 1) {
 			System.out.println("Geçersiz sayı girdiniz.");
 		}
-		
+
 		for (int l = 0; l < number; l++) {
-			if(number%2==0) {
-				isPrime=false;
+			if (number % 2 == 0) {
+				isPrime = false;
 			}
-			
+
 		}
-		
-		if(isPrime==false) {
+
+		if (isPrime == false) {
 			System.out.println("Sayı asaldır.");
-		}else {
+		} else {
 			System.out.println("Sayı asal değildir.");
 		}
-		
-		//Mini Proje 2 - Kalın Sesli ve İnce Sesli Harfler
-		char harf='I';
-		
+*/
+		// Mini Proje 2 - Kalın Sesli ve İnce Sesli Harfler
+		char harf = 'I';
+
 		switch (harf) {
 		case 'A':
 		case 'I':
@@ -267,10 +265,28 @@ public class homework {
 			break;
 		default:
 			System.out.println("İnce sesli harf.");
-		
-		}
-		
 
+		}
+
+		// Mini Proje 3 - Mükemmel Sayılar
+		int number2 = 28;
+		int total2 = 0;
+
+		for (int a = 1; a < number2; a++) {
+			if (number2 % a == 0) {
+				total2 = total2 + a;
+			}
+		}
+
+		if (total2 == number2) {
+			System.out.println("Mükemmel sayıdır.");
+		} else {
+			System.out.println("Mükemmel sayı değildir.");
+		}
 	}
 
+		
+
 }
+
+
